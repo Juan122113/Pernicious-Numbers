@@ -1,17 +1,24 @@
 function pernicious(n){
 
-    let firstNumb = 3;
+    let firstNumb = 2;
 
-    while (firstNumb <= n) {
+    if (n > 1) {
 
+        while (firstNumb < n) {
 
-        firstNumb++;
+            firstNumb++;
+    
+            // console.log(firstNumb);
+        }
+    
+    } else {
 
-        // console.log(firstNumb);
+        return "No pernicious numbers";
+
     }
 
     console.log(firstNumb);
 
 }
 
-pernicious(25);
+console.log(pernicious(1));
