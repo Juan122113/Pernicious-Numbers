@@ -4,12 +4,19 @@ function pernicious(n){
 
     if (n > 1) {
 
-        while (firstNumb < n) {
+        let NRoundedDown = Math.floor(n);
+
+        while (firstNumb <= NRoundedDown) {
+
+            let binaryNumb = firstNumb.toString(2);
 
             firstNumb++;
     
             // console.log(firstNumb);
+            console.log(binaryNumb);
         }
+
+        console.log(NRoundedDown);
     
     } else {
 
@@ -21,4 +28,4 @@ function pernicious(n){
 
 }
 
-console.log(pernicious(1));
+console.log(pernicious(5.5));
