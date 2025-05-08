@@ -24,7 +24,7 @@ function pernicious(n){
 
             let x = 0;
 
-            let y = 2;
+            let y = 3;
 
             while (x < binaryNumb.length) {
 
@@ -33,8 +33,21 @@ function pernicious(n){
 
             }
 
-            if (binarySum % y == 0) {
+            // if (binarySum % y == 0) {
+            //     result.push(firstNumb);
+            // }
+
+            if (binarySum == 2) {
                 result.push(firstNumb);
+            }
+
+            while (y <= binarySum) {
+
+                if (binarySum % y == 0) {
+                    result.push(firstNumb);
+                }
+
+                y++
             }
 
             
@@ -69,10 +82,11 @@ function pernicious(n){
             //     // console.log(binaryNumb);
             //     console.log(binarySum);
             // }
+            
+            console.log(firstNumb);
 
             firstNumb++;
     
-            // console.log(firstNumb);
             console.log(binaryString);
             console.log(onesString);
             console.log(binaryNumb);
@@ -103,4 +117,4 @@ function pernicious(n){
 
 }
 
-console.log(pernicious(105));
+console.log(pernicious(12));
