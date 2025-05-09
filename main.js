@@ -24,7 +24,7 @@ function pernicious(n){
 
             let x = 0;
 
-            let y = 3;
+            let y = 2;
 
             while (x < binaryNumb.length) {
 
