@@ -24,7 +24,7 @@ function pernicious(n){
 
             let x = 0;
 
-            let y = 2;
+            let y = 4;
 
             while (x < binaryNumb.length) {
 
@@ -37,14 +37,15 @@ function pernicious(n){
             //     result.push(firstNumb);
             // }
 
-            if (binarySum == 2) {
-                result.push(firstNumb);
-            }
+             if (binarySum == 2 || binarySum == 3) {
+                 result.push(firstNumb);
+             }
 
             while (y <= binarySum) {
 
-                if (binarySum % y == 0) {
+                if (binarySum % y == 1) {
                     result.push(firstNumb);
+                    break
                 }
 
                 y++
