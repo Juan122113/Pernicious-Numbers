@@ -24,7 +24,7 @@ function pernicious(n){
 
             let x = 0;
 
-            let y = 4;
+            let y = 2;
 
             while (x < binaryNumb.length) {
 
@@ -41,12 +41,12 @@ function pernicious(n){
                  result.push(firstNumb);
              }
 
-            while (y <= binarySum) {
+            while (y < Math.sqrt(binarySum)) {
 
                 if (binarySum % y == 1) {
-                    result.push(firstNumb);
                     break
-                }
+                } else
+                    result.push(firstNumb);
 
                 y++
             }
