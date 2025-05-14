@@ -39,30 +39,37 @@ function pernicious(n){
             //     result.push(firstNumb);
             // }
 
-            //  if (binarySum == 2 || binarySum == 3) {
-            //      result.push(firstNumb);
-            //  }
+            if (binarySum == 2 || binarySum == 3) {
+                result.push(firstNumb);
+            }
 
-            // while (y < Math.sqrt(binarySum)) {
+            while (y < Math.sqrt(binarySum)) {
 
-            //     if (binarySum % y == 1) {
-            //         break
-            //     } else
-            //         result.push(firstNumb);
+                if (binarySum % y == 1) {
+                    break
+                } else {
+                    result.push(firstNumb);
+                }
 
-            //     y++
-            // }
-
-            while (y < binarySum && binarySum != 1) {
-
-                arrOperations.push(binarySum / y);
+                console.log(binarySum % y == 1);
 
                 y++
             }
 
-            if (!arrOperations.some(Number.isInteger)) {
-                result.push(firstNumb);
-            }
+            // while (y < binarySum && binarySum != 1) {
+
+            //     arrOperations.push(binarySum / y);
+
+            //     if (arrOperations.some(Number.isInteger)) {
+            //         break
+            //     } else if (!arrOperations.some(Number.isInteger)) {
+            //     result.push(firstNumb);
+            //     }
+
+            //     y++
+            // }
+
+            
 
             
 
