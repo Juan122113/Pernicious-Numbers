@@ -24,7 +24,7 @@ function pernicious(n){
 
             let x = 0;
 
-            let y = 4;
+            let y = 2;
 
             let arrOperations = [];
 
@@ -45,7 +45,7 @@ function pernicious(n){
 
             while (y < Math.sqrt(binarySum)) {
 
-                if (binarySum % y == 1) {
+                if (binarySum % y == 0) {
                     break
                 } else {
                     result.push(firstNumb);
@@ -115,6 +115,7 @@ function pernicious(n){
             console.log(result);
             // console.log(onesNumb);
             console.log(arrOperations);
+            console.log(Math.sqrt(binarySum));
 
         }
 
@@ -139,4 +140,4 @@ function pernicious(n){
 
 }
 
-console.log(pernicious(700));
+console.log(pernicious(40));
