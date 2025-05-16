@@ -39,17 +39,28 @@ function pernicious(n){
             //     result.push(firstNumb);
             // }
 
-            if (binarySum == 2 || binarySum == 3) {
-                result.push(firstNumb);
-            }
+            // if (binarySum == 2 || binarySum == 3) {
+            //     result.push(firstNumb);
+            // }
 
-            while (y < Math.sqrt(binarySum)) {
+            while (y <= Math.sqrt(binarySum)) {
 
-                if (binarySum % y == 0) {
-                    break
-                } else {
-                    result.push(firstNumb);
-                }
+                // if (binarySum % y == 0) {
+                //     // break
+                //     arrOperations.push(binarySum / y);
+                // } else {
+                //     result.push(firstNumb);
+                // }
+
+                // if (binarySum % y != 0) {
+                    // break
+                    // arrOperations.push(binarySum / y);
+                // } //else {
+                //     result.push(firstNumb);
+                // }
+
+                arrOperations.push(binarySum / y);
+
 
                 console.log(binarySum % y == 1);
 
@@ -67,6 +78,12 @@ function pernicious(n){
             //     }
 
             //     y++
+            // }
+
+            if (!arrOperations.some(Number.isInteger)) {
+                result.push(firstNumb);
+            } //else {
+            //     result.push(firstNumb);
             // }
 
             
@@ -140,4 +157,4 @@ function pernicious(n){
 
 }
 
-console.log(pernicious(40));
+console.log(pernicious(700));
