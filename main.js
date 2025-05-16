@@ -24,7 +24,7 @@ function pernicious(n){
 
             let x = 0;
 
-            let y = 2;
+            let y = 4;
 
             let arrOperations = [];
 
