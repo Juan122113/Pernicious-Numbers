@@ -80,7 +80,7 @@ function pernicious(n){
             //     y++
             // }
 
-            if (!arrOperations.some(Number.isInteger)) {
+            if (!arrOperations.some(Number.isInteger) || binarySum != 1) {
                 result.push(firstNumb);
             } //else {
             //     result.push(firstNumb);
@@ -157,4 +157,4 @@ function pernicious(n){
 
 }
 
-console.log(pernicious(700));
+console.log(pernicious(6));
