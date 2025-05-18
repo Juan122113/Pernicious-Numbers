@@ -59,7 +59,12 @@ function pernicious(n){
                 //     result.push(firstNumb);
                 // }
 
-                arrOperations.push(binarySum / y);
+                const binarySumDividY = binarySum / y;
+                
+                console.log(binarySumDividY);
+                // console.log(binarySum);
+
+                arrOperations.push(binarySumDividY);
 
 
                 console.log(binarySum % y == 1);
@@ -80,7 +85,7 @@ function pernicious(n){
             //     y++
             // }
 
-            if (!arrOperations.some(Number.isInteger) || binarySum != 1) {
+            if (!arrOperations.some(Number.isInteger) && binarySum != 1 || binarySum == 2) {
                 result.push(firstNumb);
             } //else {
             //     result.push(firstNumb);
@@ -131,6 +136,7 @@ function pernicious(n){
             console.log(binarySum);
             console.log(result);
             // console.log(onesNumb);
+            console.log(binarySum / y);
             console.log(arrOperations);
             console.log(Math.sqrt(binarySum));
 
@@ -157,4 +163,4 @@ function pernicious(n){
 
 }
 
-console.log(pernicious(6));
+console.log(pernicious(7));
