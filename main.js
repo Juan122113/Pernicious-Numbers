@@ -14,10 +14,6 @@ function pernicious(n){
 
             let onesString = binaryString.split("");
 
-            // let binaryNumb = parseInt(onesString);
-            // let binaryNumb = [];
-            // binaryNumb = parseInt(onesString);
-
             let binaryNumb = onesString.map(num => parseInt(num));
 
             let binarySum = 0;
@@ -35,29 +31,7 @@ function pernicious(n){
 
             }
 
-            // if (binarySum % y == 0) {
-            //     result.push(firstNumb);
-            // }
-
-            // if (binarySum == 2 || binarySum == 3) {
-            //     result.push(firstNumb);
-            // }
-
             while (y <= Math.sqrt(binarySum)) {
-
-                // if (binarySum % y == 0) {
-                //     // break
-                //     arrOperations.push(binarySum / y);
-                // } else {
-                //     result.push(firstNumb);
-                // }
-
-                // if (binarySum % y != 0) {
-                    // break
-                    // arrOperations.push(binarySum / y);
-                // } //else {
-                //     result.push(firstNumb);
-                // }
 
                 const binarySumDividY = binarySum / y;
                 
